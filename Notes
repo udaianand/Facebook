@@ -1,0 +1,48 @@
+******** Assignment1: Post status message *******
+
+Pre-Requisites:
+-------------------
+	1.Enter the valid Facebook user credentials (user name & password of your Facebook account) in the config.properties file. 
+The file is located src/main/java/com/facebook/qa/config
+
+	2.In config.properties, use "chrome" browser only for now. 
+Because, I handled blocking notifications window from Facebook w.r.t chrome.
+
+
+About the Project:
+-------------------
+1.It is a Maven Project. Dependencies are defined in pom.xml
+2.Browser drivers are included within the project. If more drivers are required, please include.
+3.Used Page Object model approach.
+4.Use testng.xml to run the testsuite.
+
+Packages & Classes:
+------------------
+1.In src/main/java 
+		com/facebook/qa
+			base --> Test Base page ----> TestBase class
+			config --> config.properties
+			pages -->  Web Application pages --> Page classes
+			util --> for utility files
+			
+	
+2.In src/test/java 
+			com/facebook/qa
+				testcases --> Use for only the test cases. 
+				i.e., All Test classes for the pages and related functionality are placed here.
+
+3.In src/main/resources
+		testng.xml  --> Use to run the test as test suite.
+		For now, included 2 test classes as part of the suite.
+		1. LoginPageTest 
+		2. HomePageTest 
+
+Scenarios:
+----------
+1.Login facebook application. use loginApp().
+2.Post the status message. use postStatusMessage().
+
+
+
+	
+

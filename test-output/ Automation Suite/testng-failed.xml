@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ Automation Suite]">
+  <test thread-count="5" name="Practical Assessment(failed)">
+    <classes>
+      <class name="com.facebook.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyPostMessage"/>
+        </methods>
+      </class> <!-- com.facebook.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Practical Assessment(failed) -->
+</suite> <!-- Failed suite [ Automation Suite] -->
